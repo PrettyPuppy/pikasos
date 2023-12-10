@@ -1,0 +1,12 @@
+diff --git a/node_modules/pm2/lib/God/ActionMethods.js b/node_modules/pm2/lib/God/ActionMethods.js
+index f84b40f..66bc93e 100644
+--- a/node_modules/pm2/lib/God/ActionMethods.js
++++ b/node_modules/pm2/lib/God/ActionMethods.js
+@@ -116,6 +116,7 @@ module.exports = function(God) {
+ 
+       cb(null, processes);
+     });
++    pidusage(pids, { usePs: true });
+   };
+ 
+   /**

@@ -1,0 +1,6 @@
+# Convert text file line endings to lf
+* text=auto
+*.jpg binary
+*.png binary
+*.gif binary
+*.js text

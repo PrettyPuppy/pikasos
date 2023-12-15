@@ -65,6 +65,10 @@ const ImageSchema = new mongoose.Schema({
     type: String,
     default: '',
   },
+  category: {
+    type: String,
+    default: 'None'
+  },
   description: {
     type: String,
     default: '',

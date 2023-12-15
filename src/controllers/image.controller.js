@@ -67,6 +67,7 @@ const getSharedImage = catchAsync(async (req, res) => {
           guidance_scale: 1,
           seed: 1,
           title: 1,
+          category: 1,
           description: 1,
           created_at: 1,
           star: 1,
@@ -80,6 +81,63 @@ const getSharedImage = catchAsync(async (req, res) => {
     res.status(500).send(err);
   }
 });
+
+const getImageByCategory = catchAsync(async (req, res) => {
+  try {
+    const mergedImages = await Image.aggregate([
+      {
+        $match: {
+          isPublished: true,
+          category: req.params.category
+        },
+      },
+      {
+        $addFields: {
+          objectIdUserId: {
+            $toObjectId: '$user_id',
+          },
+        },
+      },
+      {
+        $lookup: {
+          from: 'users',
+          localField: 'objectIdUserId',
+          foreignField: '_id',
+          as: 'userInfo',
+        },
+      },
+      {
+        $unwind: {
+          path: '$userInfo',
+          preserveNullAndEmptyArrays: true,
+        },
+      },
+      {
+        $project: {
+          url: 1,
+          model: 1,
+          prompt: 1,
+          model_name: 1,
+          negative_prompt: 1,
+          width: 1,
+          height: 1,
+          num_inference_steps: 50,
+          guidance_scale: 1,
+          seed: 1,
+          title: 1,
+          description: 1,
+          created_at: 1,
+          star: 1,
+          user_name: '$userInfo.name',
+          user_picture: '$userInfo.picture',
+        },
+      },
+    ]);
+    res.send(mergedImages);
+  } catch (err) {
+    res.status(500).send(err);
+  }
+})
 
 const getTopRatedImage = catchAsync(async (req, res) => {
   try {
@@ -123,6 +181,7 @@ const getTopRatedImage = catchAsync(async (req, res) => {
           guidance_scale: 1,
           seed: 1,
           title: 1,
+          category: 1,
           description: 1,
           created_at: 1,
           star: 1,
@@ -190,6 +249,7 @@ const getImageById = catchAsync(async (req, res) => {
           guidance_scale: 1,
           seed: 1,
           title: 1,
+          category: 1,
           description: 1,
           created_at: 1,
           star: 1,
@@ -280,6 +340,7 @@ module.exports = {
   createImage,
   getAllImage,
   getSharedImage,
+  getImageByCategory,
   getTopRatedImage,
   getImageById,
   updateImageById,

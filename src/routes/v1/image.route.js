@@ -11,6 +11,7 @@ router
   .delete(auth(), imageController.deleteImage);
 
 router.get('/shared', imageController.getSharedImage);
+router.get('/shared/:category', imageController.getImageByCategory);
 router.get('/top_rate', imageController.getTopRatedImage);
 router.patch('/favorite', auth(), imageController.setFavorite);
 

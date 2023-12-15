@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "imagineo-392415",
+  "private_key_id": "a8047fc2494c11467b46d6526e46baf3af746cac",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCnrQzwyVIwrlsT\n3ANRjMBQhBXIS/tMXLJ7tJTcZdi7stAs5Zmc1LkN87H7QPEVLfCvDgCY/WAH6Eke\n+6xkOBbnNkUO+/QzJaQZz7FEMELvy//+Rzfe1tviqCwzDUuehvaRPdMs53AQXIz6\nm1fMakrf1QRNE2xZ0IjcQzsMEw1gvrewsSFYWYsK4yCtRtUctrmnZpEajZ1H4wfM\n6XJXRt4BGdJYrg3p0kQCgFB5A1NFePTgy8IXRc5CWinOnXmsM6LFczT0bg13P8Pi\nAJ16yIZHZZBqHz6pWo9uQH/tFTQUcxdPoKZNzlFZz6SziimzugIV4NVVws2hL7BV\nHhr9sIAtAgMBAAECggEARz5qDy0bNQAARtHmvxG07QESWEaggfOpCpLR5UuI6Uey\n2EC+IjroXhs7dmxDgyI/78FdU6Pk17dEyltZBkQmxxryAMnhGpJVxXnP8g8ngcgF\n/z63aIGWcBnQneh6RuNFhLTmM2Aq52jLpfe3OG25Xp2d9DnagdbvL9eJETpPJtlx\nukOcVHiXbAeKOrfNcV3ThDpZJenDi/JWUtEosJJ5DPTtU1CYVpNsOlR6RxSwXppk\np/kk9dp80ur6ST4On2+9JnSMtksPTzQsL0VM9yltYYDanor8XTN3RMPVgqbVj3je\n9Ap5dhLn9k026Ae4EDoZESGuVg68/9lDdNdILd3x6QKBgQDc6K5FqZv8trhIhazA\n92YST3VBtG3viR5z8oE7cXTrR2KPdD6MrYMCeS112GoTWyOsAkP4TT/+F/YHKjNQ\nbKxrxuE/QYvMQIb5fi6IE4kf2jHcki1iwzWpd3rtVFrTmAsyp5T3lf0QWLaY1bah\n9eYh45nDSrlEy1F/lvmdeMfyywKBgQDCT6N66XDwYU4boczvap8s/zozilsXb3ds\ng1mjYfBhwB1cX8/fmr8h7oSx9a8d3pOyRxRwYhZDXVfJY/c1NEpeC9kkk9SdiBtU\nz6oI7sq2U8VTPp7aOV1SvQbmCBgOT/X7mEZlcQGcaZ3AYIhYeC1CvRKw9oaqZ4as\n6HsL0qDh5wKBgEi1BHbFJiP895ZW+M7iHmQ0ZsFjYzONi8pZrJMl+nddnWDdv6CJ\nky8DNyUsP21zd8ArVreopUE6Ha2qBA2aVv16DbTGG/7z1fjTwPjkhSNIq1SPgASb\nf1PxkTH/q40s47KeWXdLlGkG6cJPxLZ1unK4+GjAdU3hJUe7JxjfIeAVAoGAAT1E\ny6nlgIL+Xoq/pd9GOKFAG8gMILAjUNvdnH8pa1YwWcB6sPBpu6uryP7KKSScSIzP\ngo/9mFxmDPDISNyWhNcKgYM33fFaS0YvzXLIdDVAkvFZTgcDo111R85RaPX1ma80\n87yux/KcgPecpwPNNhnCnsJTxY53e27YKhEj2Y0CgYEAx6JhjrASg4t20PhGDy5l\ny55lz1pTei4OwzUiXKsq/U5x3fyg+TBL6eZetZsWMBb0PTLOK0Bb6AcEvxkwRlXl\nX0emuv4V35t6zXikyRkD4umEUp3P1t3FLTFJv4AeldlNQhyC6RYa5pCI25DD6FIB\n55JyCUmbbPMbqSUzz28LOzo=\n-----END PRIVATE KEY-----\n",
+  "client_email": "imagineo@imagineo-392415.iam.gserviceaccount.com",
+  "client_id": "108015445314356326869",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/imagineo%40imagineo-392415.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
